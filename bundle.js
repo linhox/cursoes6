@@ -1,22 +1,60 @@
 "use strict";
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+//Terceira implementação - Operações em Arrays
+var arr = [1, 3, 4, 5, 8, 9];
+console.log("Array original: " + arr); //Função map() - Percorre os itens do array.
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+var newArr = arr.map(function (item, index) {
+  return item + index;
+});
+console.log("Soma do valor dos itens e do número do index: " + newArr); //Função reduce() - "Reduz" os itens do array a uma variável.
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+var sum = arr.reduce(function (total, next) {
+  return total + next;
+});
+console.log("Soma de todos os itens do array: " + sum); //Função filter() - "Filtra" os itens do array e retorna os resultados.
 
-alert('Teste');
+var filter = arr.filter(function (item) {
+  return item % 3 === 0;
+});
+console.log("Itens filtrados: " + filter); //Segunda implementação - Consts & Lets
 
-var Teste = /*#__PURE__*/function () {
-  function Teste() {
-    _classCallCheck(this, Teste);
+/*function teste(x) {
+  let y = 2;
+  if (x > 5) {
+    let y = 4;
+
+    console.log(x, y);
+  }
+}
+
+console.log(y);
+
+teste(10);
+*/
+//Primeira implementação - Classes
+
+/*class List {
+  constructor() {
+    this.data = [];
   }
 
-  _createClass(Teste, [{
-    key: "metodo",
-    value: function metodo() {}
-  }]);
+  add(data) {
+    this.data.push(data);
+    console.log(this.data);
+  }
+}
 
-  return Teste;
-}();
+class TodoList extends List {
+  constructor() {
+    super();
+
+    this.usuario = 'Paulo';
+  }
+}
+
+var MinhaLista = new TodoList();
+
+document.getElementById('novotodo').onclick = function() {
+  MinhaLista.add('Novo todo');
+}*/
