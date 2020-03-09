@@ -1,3 +1,31 @@
+//Nona implementação - Object Short Syntax
+//Na criação de objetos, ao se usar um parâmetro com nome de uma váriavel já exi
+//tente, colocar apenas o nome da variável e vírgula.
+/*
+const nome = "Paulo";
+const idade = 20;
+
+//Exemplo de Sintaxe Curta de Objeto
+const usuario = {
+  nome,
+  idade,
+  empresa: 'UFRN',
+};
+*/
+//------------------------------------------------------------------------------
+
+//Oitava implementação - Template Literals
+//Substitui o uso das aspas ("") por crases (``) para permitir chamar variáveis
+//de forma mais simples através da sintaxe "${nomedavariavel}"
+/*
+const nome = "Paulo";
+const idade = 20;
+
+//Exemplo de Template Literals
+console.log(`Meu nome é ${nome} e tenho ${idade} anos.`)
+*/
+//------------------------------------------------------------------------------
+
 //Sétima implementação - Rest/Spread
 //REST - Pegar o resto os objetos/variáveis de uma classe/array.
 
