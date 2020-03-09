@@ -22,13 +22,13 @@ const nome = "Paulo";
 const idade = 20;
 
 //Exemplo de Template Literals
-console.log(`Meu nome é ${nome} e tenho ${idade} anos.`)
+console.log(`Meu nome é ${nome} e tenho ${idade} anos.`);
 */
 //------------------------------------------------------------------------------
 
 //Sétima implementação - Rest/Spread
 //REST - Pegar o resto os objetos/variáveis de uma classe/array.
-
+/*
 //Usando rest em objeto
 const usuario = {
   nome: 'Paulo',
@@ -76,7 +76,7 @@ const usuario1 = {
 };
 
 const usuario2 = { ...usuario1, nome: 'Vítor' };
-
+*/
 //------------------------------------------------------------------------------
 
 //Sexta implementação - Desestruturação
