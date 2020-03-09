@@ -1,4 +1,32 @@
+//Quinta implementação - Valores padrão
+
+//O valor padrão para parâmetros de uma função deve ser especificado dentro da
+//declaração da função. Exemplo abaixo:
+const soma = (a = 3, b = 6) => a + b;
+
+//Caso não sejam especificados os valores dos parâmetros na chamada da função,
+//os valores utilizados serão os padrões dados acima. Exemplo:
+console.log(soma(1));
+console.log(soma());
+
+//Quarta implementação - Arrow Functions
+/*
+const arr = [1, 3, 4, 5, 6];
+
+//Remover o nome "function" da função e adicionar "=>" após os parâmetros.
+//Caso a função só possua um parametro, não precisa de parênteses.
+//Caso haja apenas uma linha de código na função, remover as chaves e colocar o
+//código logo após a "=>"
+const newArr = arr.map(item => item * 2)
+
+console.log(newArr);
+
+//Outro exemplo de sintaxe de função
+const teste = () => ({ nome: 'Paulo' });
+*/
+
 //Terceira implementação - Operações em Arrays
+/*
 const arr = [1, 3, 4, 5, 8, 9];
 
 console.log("Array original: " + arr);
@@ -26,10 +54,11 @@ console.log("Itens filtrados: " + filter);
 
 //Função find() - Verifica e/ou encontra uma informação dentro do array
 const find = arr.find(function(item) {
-  return item === 2;
+  return item === 3;
 });
 
 console.log("Resultado da busca: " + find);
+*/
 
 //Segunda implementação - Consts & Lets
 
