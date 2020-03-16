@@ -5,12 +5,16 @@
   "repository": "https://github.com/linhox/cursoes6.git",
   "author": "Paulo Vítor <paulovmedeiros@outlook.com>",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.6",
-    "@babel/preset-env": "^7.8.6"
+    "@babel/preset-env": "^7.8.6",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
   "scripts": {
-    "dev": "babel ./main.js -o bundle.js"
+    "dev": "webpack-dev-server --mode=development -w"
   }
 }
