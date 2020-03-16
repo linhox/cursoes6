@@ -1,8 +1,41 @@
+//Axios
+import axios from 'axios';
+
+class Api {
+  static async getUserInfo(username) {
+    try {
+      const response = await axios.get(`https://api.github.com/users/${username}`);  
+      console.log(response);
+    } catch (err) {
+      console.warn('Erro na API');
+    }
+  }
+}
+
+Api.getUserInfo(`linhox`);
+
+
+//Async/Await
+/*
+const minhaPromise = () => new Promise((resolve, reject) =>{
+  setTimeout(() => { resolve('OK') }, 2000);
+});
+
+async function executaPromise() {
+  const response = await minhaPromise();
+
+  console.log(response);
+}
+
+executaPromise();
+*/
+
 //Décima implementação - Webpackages
+/*
 import {soma} from './funcoes.js';
 
 console.log(soma(2,3));
-
+*/
 //Nona implementação - Object Short Syntax
 //Na criação de objetos, ao se usar um parâmetro com nome de uma váriavel já exi
 //tente, colocar apenas o nome da variável e vírgula.
